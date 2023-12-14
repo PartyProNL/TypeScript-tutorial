@@ -10,7 +10,7 @@ function sayHello(): void {
 ```
 
 - `function` is a keyword that tells the computer that we are about to create a function. It is like the `const` and `let` of a variable.
-- `sayText` is the name of the function
+- `sayHello` is the name of the function
 - `void` is the what the function gives back. This function does not give any data back, so it returns `void`.
 
 We then have a code block of the code that will be executed when the function is called.
@@ -71,3 +71,39 @@ const myNumber: number = addNumbers(4, 2); // Value will be 6. Don't ever make a
 ```
 
 First we have the name of each parameter (`a` or `b`), and then just like variables the type after it. You can then use these variables inside of the function-scope.
+
+## Callbacks
+A callback is very similar. It's a piece of code that you can run at any point, and is reusable. The useful thing about a callback is that it is essentially a value you can give to a variable, so you can create a variable that holds a function. This looks like this:
+
+```ts
+const myCallback: () => void = () => {
+    console.log("Callback activated")
+}
+
+myCallback(); // Runs the callback
+```
+
+Many of the things you can do with a function, like parameters and return types can also be used with callbacks:
+
+```ts
+const myCallbackWithParameters: (text: string) => void = (text) => {
+    console.log(text);
+}
+
+myCallbackWithParameters("Test"); // Logs test
+
+const myCallbackWithReturn: () => string = () => {
+    return "Returned text";
+}
+
+const myText: string = myCallbackWithReturn();
+console.log(myText); // Logs Returned text
+```
+
+You mostly just want to use functions for things like this, but there is one case where using a callback is better. This is when adding event listeners:
+
+```ts
+document.getElementById("login-button")!.addEventListener("click", () => {
+    login();
+});
+```

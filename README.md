@@ -4,10 +4,8 @@ In this tutorial I'll dive into some core programming principles and their imple
 - [Variables](variables.md)
 - [Code blocks](codeblocks.md)
 - [Functions](functions.md)
-
-// If/else
-
-// DOM-manipulation
+- [If/else](ifelse.md)
+- [Important functions and variables to know](important-functions-and-variables.md)
 
 // Arrays
 
@@ -20,3 +18,5 @@ In this tutorial I'll dive into some core programming principles and their imple
 // Async/await
 
 // Import/export
+
+// Type-casting
