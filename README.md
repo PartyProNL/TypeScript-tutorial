@@ -7,8 +7,7 @@ In this tutorial I'll dive into some core programming principles and their imple
 - [If/else](ifelse.md)
 - [Important functions and variables to know](important-functions-and-variables.md)
 - [Arrays (lists)](arrays.md)
-
-// For-loops
+- [For-loops](for-loops.md)
 
 // Nullability and undefined
 
