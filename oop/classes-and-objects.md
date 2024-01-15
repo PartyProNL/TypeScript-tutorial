@@ -2,7 +2,7 @@
 At the core of Object Oriented Programming (`OOP`) are objects and classes. We have previously worked with variables. Whenever we created a variable, we had two core components: the `type` and the `value`. These are essentially objects and classes:
 
 - The `type` is the `class`; it determines what the value can do/hold.
-- The `value` is the `object`; it is an `instance` (this is a very important word, translate it if necessary) of the type.
+- The `value` is the `object`; it is an `instance` (this is a very important word) of the type.
 
 Imagine this example:
 
